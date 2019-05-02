@@ -1,3 +1,4 @@
+#Записати в стрічку філософію Пайтона 
 zen="""The Zen of Python, by Tim Peters
 
 Beautiful is better than ugly.
@@ -20,9 +21,14 @@ If the implementation is hard to explain, it's a bad idea.
 If the implementation is easy to explain, it may be a good idea.
 Namespaces are one honking great idea -- let's do more of those!"""
 
+#Знайти в заданій стрічці кількість входжень слів (better, never, is)
 beter_count=zen.count("better")
 never_count=zen.count("never")
 is_coun=zen.count("is")
+print("better",beter_count,"never", never_count,"is", is_coun)
 
-tmp=zen.upper
+#Вивести весь текст у верхньому регістрі (всі великі літери)
 print (zen.upper())
+
+zen_replace=zen.replace('i', '&')
+print(zen_replace) 
