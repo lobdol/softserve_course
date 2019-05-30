@@ -9,3 +9,11 @@
 #Assume shortenToDate's input will always be a string, e.g. "Friday May 2, 7pm". Assume shortenToDate's output will be the shortened string, e.g., "Friday May 2".
 
 #Pushynskyy Kostya
+
+def shorten_to_date(long_date):
+    return_long_date=[]
+    for i in long_date:
+        if i ==",":
+            break
+        return_long_date.append(i)   
+    return ''.join(return_long_date)

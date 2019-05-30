@@ -2,3 +2,8 @@
 
 #The sorting should NOT be case sensitive
 #Pushynskyy Kostya
+
+def sorter(textbooks):
+    #Cramming before a test can't be that bad?
+    res=sorted(textbooks, key=str.lower)
+    return res
